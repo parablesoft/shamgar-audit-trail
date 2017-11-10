@@ -1,0 +1,6 @@
+<strong>{{humanize key-suffix}}</strong>: 
+{{#if (eq key-suffix "at")}}
+  {{moment-format displayValue "MM/DD/YYYY [at] h:mma"}}
+{{else}}
+  {{displayValue}}
+{{/if}}

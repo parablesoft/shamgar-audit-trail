@@ -1,26 +1,41 @@
 # shamgar-audit-trail
 
-This README outlines the details of collaborating on this Ember addon.
+This README outlines the details of using this Ember addon. shamgar-audit-trail is meant to display audit information for a shamgar framework's auditing.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd shamgar-audit-trail`
-* `npm install`
+* `ember install shamgar-audit-trail`
 
-## Running
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+## Usage
 
-## Running Tests
+```handlebars
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+{{audit-trail 
+  resource=objectBeingAudited
+  sections-to-show=sections
+  fields=fields
+}}
+```
 
-## Building
+### Properties
 
-* `ember build`
+<table width="100%">
+  <tr>
+  	<th valign="top" width="120px" align="left">Property</th>
+  	<th valign="top" align="left">Description</th>
+  </tr>
+  <tr>
+    <td valign="top"><code>resource</code></td>
+    <td valign="top">Any ember object which contains the audit trail information</td>
+  </tr>
+  <tr>
+    <td valign="top"><code>sections</code></td>
+    <td valign="top">An array of sections to display</td>
+  </tr>
+  <tr>
+    <td valign="top"><code>fields</code></td>
+    <td valign="top">(Optional) The defaults are <code>at</code> and <code>by</code>.</td>
+  </tr> 
+</table>
 
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
