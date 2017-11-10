@@ -1,0 +1,12 @@
+<a href="#" {{action "toggle-audit-trail"}}>{{link-text}}</a>
+{{#if is-showing-audit-trail}}
+  {{#bs-modal-simple 
+    onHide=(action "toggle-audit-trail") 
+    title="Audit Trail"
+  }}
+    {{audit-trail  
+      resource=resource
+      sections-to-show=sections-to-show
+    }}
+  {{/bs-modal-simple}}
+{{/if}}

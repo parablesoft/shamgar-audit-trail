@@ -1,0 +1,1 @@
+export { default } from 'shamgar-audit-trail/components/audit-trail-link';
