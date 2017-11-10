@@ -6,7 +6,7 @@ export default Route.extend({
   model(){
     let sections = ["ordered","in_process"];
     let resource = Ember.Object.create({
-      status: "foo",
+      status: "ordered",
       auditTrail: {
 	"ordered_at": "2017-11-10T14:56:38.146Z",
 	"ordered_by": "Bruce Bubbly",

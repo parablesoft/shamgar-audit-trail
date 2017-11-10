@@ -11,7 +11,9 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/parablesoft/shamgar-audit-trail",
+  "bugs": "https://github.com/parablesoft/shamgar-audit-trail/issues",
+  "homepage": "https://github.com/parablesoft/shamgar-audit-trail",
   "scripts": {
     "build": "ember build",
     "start": "ember server",

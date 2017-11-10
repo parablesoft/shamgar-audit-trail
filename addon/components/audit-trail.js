@@ -6,7 +6,13 @@ const {Component} = Ember;
 
 export default Component.extend({
   layout,
-  sections: [],
+  "sections-to-show": [],
   fields: ["at","by"],
   @alias("resource.auditTrail") auditTrail,
+  @computed("sections-to-show","resource.status") sections(sections,status){
+    let maxIndex = sections.indexOf(status);
+    return sections.filter((item,index) =>{
+      return index <= maxIndex;
+    });
+  }
 });
